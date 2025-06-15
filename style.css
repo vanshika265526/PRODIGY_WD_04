@@ -8,6 +8,28 @@
 body {
   background: linear-gradient(135deg, #0c0c0c, #2c17b4);
 }
+@media (max-width: 480px) {
+  .weather h1 {
+    font-size: 50px;
+  }
+
+  .weather h2 {
+    font-size: 30px;
+  }
+
+  .humidity, .wind {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .weather-icon {
+    width: 120px;
+  }
+
+  .col img {
+    width: 30px;
+  }
+}
 
 .card {
   width: 90%;
@@ -73,11 +95,13 @@ body {
 .details {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 0 200px;
-  margin-top: 50px;
-  gap: 100px;
+  justify-content: space-between;
+  flex-wrap: wrap; /* wrap items on small screens */
+  padding: 0 20px; /* reduced padding for responsiveness */
+  margin-top: 40px;
+  gap: 30px; /* smaller gap */
 }
+
 
 .col {
   display: flex;
