@@ -21,15 +21,15 @@ async function checkWheather(city) {
 
     console.log(data.weather[0].main);
     if (data.weather[0].main == "Clouds") {
-      weatherIcon.src = "img/clouds.svg";
+      weatherIcon.src = "clouds.svg";
     } else if (data.weather[0].main == "Clear") {
-      weatherIcon.src = "img/clear.svg";
+      weatherIcon.src = "clear.svg";
     } else if (data.weather[0].main == "Rain") {
-      weatherIcon.src = "img/rain.svg";
+      weatherIcon.src = "rain.svg";
     } else if (data.weather[0].main == "Drizzle") {
-      weatherIcon.src = "img/drizzle.svg";
+      weatherIcon.src = "drizzle.svg";
     } else if (data.weather[0].main == "Mist") {
-      weatherIcon.src = "img/mist.png";
+      weatherIcon.src = "mist.png";
     }
 
     document.querySelector(".weather").style.display = "block";
@@ -48,4 +48,4 @@ searchBox.addEventListener("keydown", (event) => {
   }
 });
 
-checkWheather("New Delhi");
+checkWheather("New Delhi"); //default
